@@ -1,0 +1,283 @@
+body,
+html {
+    background-color: #0c141f;
+    padding: 0;
+    margin: 0;
+}
+header{
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 80px;
+
+}
+
+header img{
+  width: 100px;
+  height: 100px;
+}
+nav{
+  float: right;
+  padding: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+}
+
+nav a label{
+  padding-right: 20px;
+}
+
+nav a label:hover{
+  color: #fc0352;
+}
+.carousel-wrapper {
+    height: 400px;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-top: 25px;
+}
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev {
+    left: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow,
+    .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url("https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+.item-2 {
+    background: url("https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+.item-3 {
+    background: url("https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.item-4 {
+    background: url("https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3,
+#item-4:target ~ .item-4 {
+    z-index: 3;
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .carousel-wrapper {
+        max-width: calc(100% - 80px);
+        margin: 0 auto;
+    }
+}
+
+.video-carousel-wrapper {
+    height: 300px;
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-top: 50px;
+}
+.video-carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+.video-arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.video-arrow-prev {
+    left: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.video-arrow-next {
+    right: -30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.video-light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .video-arrow,
+    .video-light .video-arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+/*Select every element*/
+[id^="video-item"] {
+    display: none;
+}
+
+.video-item-1 {
+    z-index: 2;
+    opacity: 1;
+    background-color: rgb(197, 197, 197);
+    background-size: cover;
+    border-radius: 20px;
+}
+.video-item-2 {
+    background-color: rgb(197, 197, 197);
+    background-size: cover;
+    border-radius: 20px;
+}
+.video-item-3 {
+    background-color: rgb(197, 197, 197);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.video-item-4 {
+    background-color: rgb(197, 197, 197);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+*:target ~ .video-item-1 {
+    opacity: 0;
+}
+
+#video-item-1:target ~ .video-item-1 {
+    opacity: 1;
+}
+
+#video-item-2:target ~ .video-item-2,
+#video-item-3:target ~ .video-item-3,
+#video-item-4:target ~ .video-item-4 {
+    z-index: 3;
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .video-carousel-wrapper {
+        max-width: calc(100% - 80px);
+        margin: 0 auto;
+    }
+}
+footer{
+  display: flex;
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.frstSide{
+  width: 60%;
+  margin: 0;
+}
+
+ul h3{
+  color: #ffffff;
+}
+
+ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul li a img{
+  width: 10%;
+  height: 10%;
+}
+
+.scndSide{
+  width: 40%;
+}
+
+.scndSide img{
+  width: 250px;
+  height: 120px;
+}
