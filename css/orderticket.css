@@ -1,0 +1,129 @@
+body{
+	background-color: #1b242f;
+	width: 100%;
+	margin: 0;
+}
+
+header{
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 30px;
+}
+
+nav{
+	display: inline-block;
+	padding: 5px;
+	margin-left:15px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 15px;
+	padding-left: 15px;
+}
+
+nav a label{
+	padding-right: 10px;
+}
+
+nav a label:hover{
+	color: #fc0352;
+}
+
+
+.main{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 35px;
+}
+
+.frst{
+	margin-top: 10px;
+}
+
+.frst img{
+	width: 300px;
+	height: 200px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 10%;
+}
+
+.frst img:hover{
+	opacity: 0.2;
+}
+
+.scnd select {
+  width: 300px;
+  background-color: #F5F5DC;
+  border-color: #1b242f;
+  border-width: 2px;
+  color: #A9A9A9; 
+  font-family: "Times, serif";
+  font-size: 8px;
+  border-radius: 5px 5px 5px 5px;
+  border-style: solid;
+  padding: 5px;
+  margin: 2px;
+}
+
+.scnd option{
+	color: #1b242f;
+}
+
+.scnd{
+	text-align: center;
+}
+
+.scnd button{
+	background-color: #fc0352;
+	border-color: #fc0352;
+	border-radius: 5px 5px 5px 5px;
+	padding: 5px;
+	color: #ffffff;
+	font-family: "Times, serif";
+	font-size: 8px;
+	margin-top: 5px; 
+	margin-bottom: 5px; 
+}
+
+.scnd button:hover{
+	opacity: 0.8;
+}
+
+footer{
+	background-color: rgba(0,0,0,0.3);
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.frstSide{
+	width: 100%;
+	margin: 0;
+}
+
+ul{
+	padding: 10px;
+	margin-left:40px;
+}
+
+ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+ul li a img{
+	width: 10%;
+	height: 10%;
+}
