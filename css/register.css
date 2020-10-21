@@ -1,0 +1,140 @@
+body{
+  background-color: #1b242f;
+  width: 100%;
+  margin: 0;
+}
+
+header{
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 80px;
+
+}
+
+header img{
+  width: 100px;
+  height: 100px;
+}
+
+main{
+  padding-right: 80px;
+  padding-top: 140px;
+}
+
+nav{
+  float: right;
+  padding: 20px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+}
+
+nav a label{
+  padding-right: 20px;
+}
+
+nav a label:hover{
+  color: #fc0352;
+}
+.logo1{
+  width: 20%;
+  height: 10px;
+}
+
+.section1{
+  width: 40%;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.section2{
+  width: 30%;
+  float: right;
+  border-style: solid;
+  color: white;
+  border-color: #ffffff;
+  margin-right: 60px;
+  text-align: center;
+  /*padding-top: 50px;*/
+}
+
+.section2 input{
+  width: 60%;
+  padding: 15px;
+  margin: 5px;
+}
+
+.section2 a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  padding-left: 50px;
+}
+
+.section2 button{
+  background-color: #fc0352;
+  border-color: #fc0352;
+  color: #ffffff;
+  font-family: "Times, serif";
+  font-size: 20px;
+  width: 200px;
+  height: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.section2 img{
+  width: 20%;
+  height: 20%;
+  padding-top: 20px;
+}
+.section2 p{
+  padding-right: 100px;
+  padding-left: 80px;
+  color: white;
+  font-size: 12px;
+}
+footer{
+  display: flex;
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.frstSide{
+  width: 60%;
+  margin: 0;
+}
+
+ul h3{
+  color: #ffffff;
+}
+
+ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul li a img{
+  width: 10%;
+  height: 10%;
+}
+
+.scndSide{
+  width: 40%;
+}
+
+.scndSide img{
+  width: 250px;
+  height: 120px;
+}
